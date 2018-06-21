@@ -2,30 +2,24 @@
   <div id="app">
     <Goals />
     <Graph />    
-    <Skills />
-    
+    <Tools />
   </div>
 </template>
 
 <script>
-
-import Goals from './components/Goals.vue'
-import Graph from './components/Graph.vue'
-import Skills from './components/Skills.vue' 
+import Goals from "./components/Goals.vue";
+import Graph from "./components/Graph.vue";
+import Tools from "./components/Tools.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
     Goals,
     Graph,
-    Skills
-
+    Tools
   }
-}
-
+};
 </script>
 
 <style>
-
-
 </style>
