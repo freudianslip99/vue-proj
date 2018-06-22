@@ -7,14 +7,20 @@
 </template>
 
 <script>
+import Goals from './Goals.vue'
+
+
 export default {
-  name: "Graph",
   data() {
     return {
-      message: "A beautiful D3 graph will go here."
-    };
+      message: "These are the goals of this project: "
+    }
+  },
+  components: {
+    Goals
   }
-};
+}
+
 </script>
 
 <style>

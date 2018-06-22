@@ -1,8 +1,15 @@
 <template>
+<div>
+<v-toolbar>
+      <v-toolbar-side-icon></v-toolbar-side-icon>
+      <v-toolbar-title>Neutron Scattering Plots Emporium</v-toolbar-title>
+</v-toolbar>
+
   <div id="app">
     <Goals />
     <Graph />    
     <Tools />
+  </div>
   </div>
 </template>
 
