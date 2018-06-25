@@ -1,35 +1,17 @@
 <template>
-  <div>
-        <div class="card m-2" style="width: 40rem;">
-            <div class="card-body">
-                <h5 class="card-title" v-text="thecardtitle"></h5>
-                <button @click="sendMessage" class="btn btn-info">Send Graph.vue A Message</button>
-                <Graph :parentmessage="parentmessage"></Graph>
-            </div>
-        </div>
-    </div>
+  <div v-if="fromGraph" class="mt-3 alert alert-secondary" v-html="fromGraph"></div>
 
 </template>
 
 <script>
-import Graph from './Graph.vue';
+ import {eventBus} from "../main";
 
-export default{
-  components: {Graph},
-
-  data(){
-    return{
-      thecardtitle:'Tools.vue card title',
-      parentmessage:"Tools.vue message prior to button click"
-    }
-  },
-
-  methods: {
-    sendMessage(){
-      this.parentmessage = '<b>Message:</b> Graph reveal' 
-    }
-  }
-};
+ methods: {
+    messageGraph() {
+        eventBus.$emit('Toolssaid', 'Tools said do your homework!');
+    
+}
+}
 </script>
 
 
