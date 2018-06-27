@@ -4,14 +4,14 @@
 </template>
 
 <script>
- import {eventBus} from "../main";
+ import {eventBus} from "../main.js";
 
  methods: {
     messageGraph() {
         eventBus.$emit('Toolssaid', 'Tools said do your homework!');
     
 }
-}
+};
 </script>
 
 
