@@ -21,7 +21,7 @@ import Tools from "./components/Tools.vue";
 export default {
   name: "app",
   components: {
-    Goals,
+    Nav,
     Graph,
     Tools
   }
