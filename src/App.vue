@@ -6,7 +6,7 @@
 </v-toolbar>
 
   <div id="app">
-    <Goals />
+    <Nav />
     <Graph />    
     <Tools />
   </div>
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Goals from "./components/Goals.vue";
+import Nav from "./components/Nav.vue";
 import Graph from "./components/Graph.vue";
 import Tools from "./components/Tools.vue";
 
