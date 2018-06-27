@@ -3,16 +3,17 @@
 </template>
 
 <script>
-  created() {
+  created: () ({
     eventBus.$on('Toolssaid', (message) => {
       this.fromTools = message
+      }
     }),
   
 
-  data() 
+  data: () 
     return {
       thecardtitle: 'Child Component!',
-      fromsister: '',
+      fromsister: '';
       
     }
   }
